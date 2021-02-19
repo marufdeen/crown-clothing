@@ -16,7 +16,7 @@ import './header.scss';
         {
         currentUser?
         <div className='option' onClick={ () => auth.signOut() }>SIGN OUT</div>: 
-        <Link to='/signin' className='option'>SIGNIN </Link>
+        <Link to='/signin' className='option'> SIGN IN </Link>
         } 
         </div>
         </div>
