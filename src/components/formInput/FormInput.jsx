@@ -3,6 +3,7 @@ import "./form-input.scss";
 
 const FormInput = ({ label, handleChange, ...otherProps }) => {
   return (
+    <>
     <div className="group">
       <input className="form-input" onChange={handleChange} {...otherProps} />
       {label ? (
@@ -14,7 +15,8 @@ const FormInput = ({ label, handleChange, ...otherProps }) => {
           {label}
         </label>
       ) : null}
-    </div>
+    </div> 
+    </>
   );
 };
 
